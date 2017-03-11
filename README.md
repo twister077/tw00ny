@@ -5,7 +5,7 @@ Port of web2py libraries to Pyramid with an example.
 
 This semi fork from mdipierro/gluino is a succesfull attempt to upgraded the Gluino libraries to Web2py 2.14.6 (Gluino later became known as Web2y).
 
-The reason why I decided to semi upgrade gluino is Web2py was not updated for almost a year now since writing this. So I decided to upgrade to an active Python Web Frameworks such as Pyramid, which I really like. But there was one downsize. I didn't like templating libraries like jinja2 or chameleon. Web2py has a realy thoughtout templating system. Easy to use and simular to jinja2 and chameleon. By working on gluino/tw00ny I could easing step over to Pyramid, without recoding al my templates and databaseconnections.
+The reason why I decided to semi upgrade gluino is Web2py was not updated for almost a year now since writing this. So I decided to upgrade to an active Python Web Frameworks such as Pyramid, which I really like. But there was one downsize. I didn't like templating libraries like jinja2 or chameleon. Web2py has a realy thoughtout templating system. Easy to use and similar to jinja2 and chameleon. By working on gluino/tw00ny I could easing step over to Pyramid, without recoding al my templates and databaseconnections.
 
 Author: Massimo Di Pierro
 Edited and upgraded by: Jefta Harlingen
