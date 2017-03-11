@@ -39,6 +39,7 @@ db.define_table('person',Field('name',requires=IS_NOT_EMPTY()))
 form = SQLFORM(db.person)
 if form.accepts(vars):
     message = 'hello %s' % form.vars.name
+    db.commit()
 else:
     message = 'hello anonymous'
 people = db(db.person).select()
