@@ -17,7 +17,7 @@ On Web2py: http://web2py.com
 
 On Pyramid: http://docs.pylonsproject.org/en/latest
 
-The port includes;
+The port includes:
 * Database Abstraction Layer (dal.py) documentation
 * Template language (template.py) documentation
 * FORMs (form.py) documentation
