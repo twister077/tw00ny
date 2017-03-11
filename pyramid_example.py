@@ -24,6 +24,7 @@ def index(context, request):
     form = SQLFORM(db.person)
     if form.accepts(vars):
         message = 'hello %s' % form.vars.name
+        db.commit()
     else:
         message = 'hello anonymous'
     people = db(db.person).select()
