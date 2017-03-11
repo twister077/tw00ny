@@ -1,5 +1,5 @@
 ## About tw00ny
-A new port of the Web2py 2.14.6 libraries to Pyramid (based on mdipierro/gluino)
+A new port of the Web2py 2.14.6 libraries to Pyramid (based on [mdipierro/gluino](https://github.com/mdipierro/gluino))
 
 This semi fork from mdipierro/gluino is a succesfull attempt to upgraded the Gluino libraries to Web2py 2.14.6 (Gluino later became known as Web2y).
 
