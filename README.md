@@ -54,3 +54,20 @@ and execute the same template:
 <h2>A static image</h2>
 <img src="/static/cat.jpg" />
 ```
+
+Databases supported:
+* SQLite	sqlite3 or pysqlite2 or zxJDBC [zxjdbc] (on Jython)
+* PostgreSQL	psycopg2 [psycopg2] or pg8000 [pg8000] or zxJDBC [zxjdbc] (on Jython)* 
+* MySQL	pymysql [pymysql] or MySQLdb [mysqldb]
+* Oracle	cx_Oracle [cxoracle]
+* MSSQL	pyodbc [pyodbc] or pypyodbc[pypyodbc]
+* FireBird	kinterbasdb [kinterbasdb] or fdb or pyodbc
+* DB2	pyodbc [pyodbc]
+* Informix	informixdb [informixdb]
+* Ingres	ingresdbi [ingresdbi]
+* Cubrid	cubriddb [cubridb] [cubridb]
+* Sybase	Sybase [Sybase]
+* Teradata	pyodbc [Teradata]
+* SAPDB	sapdb [SAPDB]
+* MongoDB	pymongo [pymongo]
+* IMAP	imaplib [IMAP]
