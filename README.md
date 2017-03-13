@@ -18,13 +18,15 @@ On Web2py: http://web2py.com
 On Pyramid: http://docs.pylonsproject.org/en/latest
 
 The port includes:
-* Database Abstraction Layer (dal.py) documentation
-* Template language (template.py) documentation
-* FORMs (form.py) documentation
-* SQLFORMs (sqlhtml.py) documentation
-* validators (validators.py) documentation
-* widgets documentation
-* cache (cache.py) documentation
+* Database Abstraction Layer (dal.py)
+* Template language (template.py)
+* FORMs (form.py)
+* SQLFORMs (sqlhtml.py)
+* validators (validators.py)
+* widgets
+* cache (cache.py)
+
+All Web2py documentation can be found [here](http://web2py.com/book)
 
 ### Examples
 
