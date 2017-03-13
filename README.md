@@ -26,7 +26,7 @@ The port includes:
 * widgets
 * cache (cache.py)
 
-All Web2py documentation can be found [here](http://web2py.com/book)
+All Web2py documentation can be found [here](http://web2py.com/book).
 
 ### Examples
 
