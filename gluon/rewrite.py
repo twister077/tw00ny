@@ -196,7 +196,10 @@ def url_out(request, environ, application, controller, function,
         url = '%s%s' % (acf, other)
     else:
         #url = '/%s/%s/%s%s' % (application, controller, function, other)
-        url = '/%s/%s%s' % (controller, function, other)
+        if not controller:
+            url = '/%s%s' % (function, other)
+        else:
+            url = '/%s/%s%s' % (controller, function, other)
         url = regex_filter_out(url, environ)
     #
     #  fill in scheme and host if absolute URL is requested
