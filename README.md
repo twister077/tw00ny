@@ -58,7 +58,7 @@ and execute the same template:
 <img src="/static/cat.jpg" />
 ```
 
-which generates the the following output on the Pyramid web framework:
+which generates the following output on the Pyramid web framework:
 
 ![GitHub Logo](/static/screenshot.png)
 
