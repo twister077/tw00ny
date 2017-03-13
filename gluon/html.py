@@ -326,7 +326,9 @@ def URL(
 
     function2 = '%s.%s' % (function, extension or 'html')
 
-    if not (application and controller and function):
+    #if not (application and controller and function):
+    #    raise SyntaxError('not enough information to build the url (%s %s %s)' % (application, controller, function))
+    if not (controller and function):
         raise SyntaxError('not enough information to build the url (%s %s %s)' % (application, controller, function))
 
     if args:
@@ -395,7 +397,9 @@ def URL(
     if extension:
         function += '.' + extension
 
-    if regex_crlf.search(join([application, controller, function, other])):
+    #if regex_crlf.search(join([application, controller, function, other])):
+    #    raise SyntaxError('CRLF Injection Detected')
+    if regex_crlf.search(join([controller, function, other])):
         raise SyntaxError('CRLF Injection Detected')
 
     url = url_out(r, env, application, controller, function,
