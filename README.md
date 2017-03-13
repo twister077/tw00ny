@@ -51,6 +51,7 @@ and execute the same template:
 ```
 {{extend 'templates/layout.html'}}
 {{from gluon.html import *}}
+
 <h1>{{=message}}</h1>
 {{=form}}
 <h2>People</h2>
