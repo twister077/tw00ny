@@ -82,3 +82,5 @@ Databases supported:
 * SAPDB	sapdb
 * MongoDB	pymongo
 * IMAP	imaplib
+
+You can also create an executable for production purposes by using [PyInstaller](http://www.pyinstaller.org/). See the [WIKI](https://github.com/twister077/tw00ny/wiki) page for more details and for an example.
