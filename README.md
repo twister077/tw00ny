@@ -30,9 +30,11 @@ All Web2py documentation can be found [here](http://web2py.com/book).
 
 ### Examples
 
-* pyramid_example.py
+* pyramid_example.py (basic example)
+* Example/Model-View-Controller (each in their own separate file)
 
-All the examples include the same common code:
+
+The basic pyramid_example.py example included:
 ```
 db=DAL('sqlite://storage.sqlite')
 db.define_table('person',Field('name',requires=IS_NOT_EMPTY()))
