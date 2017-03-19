@@ -44,6 +44,7 @@ form = SQLFORM(db.person)
 if form.accepts(vars):
     message = 'hello %s' % form.vars.name
     db.commit()
+    redirect('https://www.google.com')
 else:
     message = 'hello anonymous'
 people = db(db.person).select()
