@@ -1,3 +1,4 @@
+from pyramid.httpexceptions import HTTPFound
 from gluon.template import *
 from gluon.html import *
 from gluon.validators import *
@@ -28,7 +29,13 @@ class wrapper(object):
                     # used by pyramid
                     r = self.response(r)
             except HTTP, e:                
-                raise NotImplementedError
+                try:
+                    if e.headers['Location']:
+                        return HTTPFound(location=e.headers['Location'])
+                    else:
+                        raise NotImplementedError
+                except:
+                    raise NotImplementedError
             except Exception, e:
                 print e
                 for db in self.dbs: db._adapter.close('rollback')
