@@ -26,8 +26,8 @@ def index(context, request):
     if form.accepts(vars):
         message = 'hello %s' % form.vars.name
         db.commit()
-        redirect('https://www.google.com')
-        request.session.flash('Not allowed')
+        redirect('/newpage')
+        request.session.flash('hi' + form.vars.name)
     else:
         message = 'hello anonymous'
     people = db(db.person).select()
