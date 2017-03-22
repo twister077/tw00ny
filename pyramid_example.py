@@ -3,6 +3,7 @@ from pyramid.config import Configurator
 from pyramid.response import Response
 from pyramid.static import static_view
 from pyramid.httpexceptions import HTTPFound
+from pyramid.session import SignedCookieSessionFactory
 from gluon import DAL, Field, SQLFORM, cache, IS_NOT_EMPTY, IS_IN_DB, HTTP
 from gluon.sqlhtml import *
 from wrapper import wrapper
@@ -25,6 +26,7 @@ def index(context, request):
     if form.accepts(vars):
         message = 'hello %s' % form.vars.name
         db.commit()
+        request.session.flash('Not allowed')
     else:
         message = 'hello anonymous'
     people = db(db.person).select()
