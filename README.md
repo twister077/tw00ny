@@ -40,12 +40,13 @@ db=DAL('sqlite://storage.sqlite')
 db.define_table('person',Field('name',requires=IS_NOT_EMPTY()))
 
 ...
+
 form = SQLFORM(db.person)
 if form.accepts(vars):
     message = 'hello %s' % form.vars.name
     db.commit()
-    redirect('https://www.google.com')
-else:
+    redirect('/newpage')
+    request.session.flash('hello %s' % form.vars.name)else:
     message = 'hello anonymous'
 people = db(db.person).select()
 return locals()
