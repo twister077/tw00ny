@@ -45,9 +45,10 @@ form = SQLFORM(db.person)
 if form.accepts(vars):
     message = 'hello %s' % form.vars.name
     db.commit()
-    message = 'hello anonymous'
-    request.session.flash('hello %s' % form.vars.name)else:
+    request.session.flash('hello %s' % form.vars.name)
     redirect('/newpage')
+else:
+    message = 'hello anonymous'
 people = db(db.person).select()
 return locals()
 ```
