@@ -4,8 +4,8 @@ from pyramid.response import Response
 from pyramid.static import static_view
 from pyramid.httpexceptions import HTTPFound
 from pyramid.session import SignedCookieSessionFactory
+from pylons.controllers.util import redirect
 from gluon import DAL, Field, SQLFORM, cache, IS_NOT_EMPTY, IS_IN_DB, HTTP
-from gluon.sqlhtml import *
 from wrapper import wrapper
 import traceback
 import time
@@ -26,6 +26,7 @@ def index(context, request):
     if form.accepts(vars):
         message = 'hello %s' % form.vars.name
         db.commit()
+        redirect('https://www.google.com')
         request.session.flash('Not allowed')
     else:
         message = 'hello anonymous'
