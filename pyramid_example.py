@@ -27,7 +27,7 @@ def index(context, request):
         message = 'hello %s' % form.vars.name
         db.commit()
         redirect('/newpage')
-        request.session.flash('hi' + form.vars.name)
+        request.session.flash('hello %s' % form.vars.name)
     else:
         message = 'hello anonymous'
     people = db(db.person).select()
