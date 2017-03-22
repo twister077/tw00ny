@@ -14,6 +14,13 @@ select, input {
     line-height: 30px;
 }
 </style>
+    {{try:}}
+        {{flash = request.session.pop_flash()}}
+        {{if len(flash) > 0:}}
+            <div class="w2p_flash alert alert-dismissable" style="display: block;">{{=flash[0]}}<span id="closeflash"> × </span></div>
+            {{pass}}
+    {{except:}}
+        {{pass}}
     {{include}}
     
   </body>
